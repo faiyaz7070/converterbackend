@@ -10,8 +10,8 @@ const {Connection } = require('./configs/db');
 const { router} = require('./routes/code.route');
 
 // Middleware
-app.use(express.json());
 app.use(cors());
+app.use(express.json());
 
 
 app.get('/', (req, res) => {
